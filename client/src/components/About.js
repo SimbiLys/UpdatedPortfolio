@@ -25,7 +25,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <div className="section-title">About</div>
-          <div className="section-sub">&gt; who_i_am</div>
+          
         </motion.div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: '80px', alignItems: 'start' }}>
@@ -43,7 +43,7 @@ export default function About() {
               boxShadow: '0 0 40px var(--gibraltar-glow)',
               background: 'var(--bg-card)'
             }}>
-              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: '48px', color: 'var(--silver)', fontWeight: 400, letterSpacing: '0.1em' }}>SLA</span>
+              <span style={{ fontFamily: "'Playfair Display',serif", fontSize: '48px', color: 'var(--silver)', fontWeight: 400, letterSpacing: '0.1em' }}>SL</span>
               <div style={{ position: 'absolute', top: '-8px', left: '-8px', width: '24px', height: '24px', borderTop: '1px solid var(--gibraltar-light)', borderLeft: '1px solid var(--gibraltar-light)' }} />
               <div style={{ position: 'absolute', bottom: '-8px', right: '-8px', width: '24px', height: '24px', borderBottom: '1px solid var(--gibraltar-light)', borderRight: '1px solid var(--gibraltar-light)' }} />
             </div>
@@ -69,7 +69,7 @@ export default function About() {
               ))}
             </div>
 
-            <p style={{ color: 'var(--silver)', lineHeight: 1.9, fontSize: '13px', marginBottom: '48px' }}>
+            <p style={{ color: 'var(--silver)', lineHeight: 1.9, fontSize: '13px', marginBottom: '48px', textAlign: 'justify' }}>
               {lang === 'EN' ? bioEN : bioFR}
             </p>
 
