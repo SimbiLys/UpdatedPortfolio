@@ -2,13 +2,12 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const milestones = [
-  { year: '2022', title: 'First Line of Code', desc: 'Discovered HTML & CSS and fell in love with building for the web. That first rendered page changed everything.' },
-  { year: '2023', title: 'Rwanda Coding Academy', desc: 'Joined RCA to pursue Software Programming & Embedded Systems, diving deep into C, Python, and systems thinking.' },
-  { year: '2023', title: 'Design Awakening', desc: 'Discovered Figma and UI/UX design — the realization that great software must be both functional and beautiful.' },
-  { year: '2024', title: 'Going Full-Stack', desc: 'Expanded into backend development with Node.js, PHP, JavaScript, and both relational and non-relational databases.' },
-  { year: '2024', title: 'Thinking in Systems', desc: 'Began exploring Embedded Systems and fell in love with the intersection of hardware and software intelligence.' },
-  { year: '2025', title: 'The AI Chapter', desc: 'Started deeply exploring Artificial Intelligence — the technology she believes will define the next era of human progress.' },
-  { year: 'Now', title: 'Building & Growing', desc: 'Actively developing projects, sharpening every skill, and preparing to make her mark on the global tech stage.' },
+  { year: '2025', title: 'Rwanda Coding Academy', desc: 'Joined RCA to pursue Software Programming & Embedded Systems — the beginning of everything.' },
+  { year: '2025', title: 'First Line of Code', desc: 'Wrote my first lines of code and immediately knew this was where I belonged.' },
+  { year: '2025', title: 'Design Awakening', desc: 'Discovered Figma and UI/UX design — the realization that great software must be both functional and beautiful.' },
+  { year: '2025', title: 'Frontend Development', desc: 'Dove into HTML, CSS and React, building interfaces that brought my designs to life.' },
+  { year: '2026', title: 'Going Backend', desc: 'Expanded into backend development with Node.js, PHP, JavaScript, and both relational and non-relational databases.' },
+  { year: '2026', title: 'The AI Chapter', desc: 'Found my deepest passion in Artificial Intelligence — the technology I believe will define the next era of human progress.' },
 ];
 
 function Milestone({ year, title, desc, index }) {
@@ -78,7 +77,7 @@ export default function Journey() {
       <div className="container">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
           <div className="section-title">My Journey</div>
-          <div className="section-sub">&gt; git log --my-story</div>
+
         </motion.div>
 
         <div style={{ position: 'relative' }}>
@@ -99,9 +98,6 @@ export default function Journey() {
             display: none !important;
           }
           #journey .container > div:last-child > div > div:last-child {
-            visibility: visible !important;
-          }
-          #journey .container > div:last-child > div > div:first-child + div + div {
             visibility: visible !important;
           }
         }
